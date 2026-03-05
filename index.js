@@ -1,22 +1,9 @@
-// setTimeout(function () {
-//     console.log("timer");
-// }, 5000);
+console.log("Start");
 
-// function x(y) {
-//     console.log("x");
-//     y();
-// }
-
-// x(function y() {
-//     console.log("y");
-// });
-
-
-function attachEventListeners() {
-    let count = 0;
-    document.getElementById("clickMe").addEventListener("click", function xyz() {
-        console.log("Button Clicked ", ++count);
-    });
+function cb() {
+    console.log("Callback");
 }
 
-attachEventListeners();
+setTimeout(cb, 0);
+
+console.log("End");
